@@ -1,0 +1,11 @@
+# sprockets-umodule
+
+[umodule-js](https://github.com/lloeki/umodule-js) integration with Sprockets
+
+## Goal
+
+Save you from the boilerplate of writing module wrapping.
+
+## Usage
+
+Add sprockets-umodule to your Gemfile. Name your module files with .umodule.
