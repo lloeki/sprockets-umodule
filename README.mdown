@@ -4,8 +4,30 @@
 
 ## Goal
 
-Save you from the boilerplate of writing module wrapping.
+`sprockets-umodule` saves you from the chore of writing CommonJS umodule
+wrapping boilerplate. The module name will automatically be set from its
+logical path (relative path to its asset root).
 
 ## Usage
 
-Add sprockets-umodule to your Gemfile. Name your module files with .umodule.
+Add `gem 'sprockets-umodule'` to your Gemfile. Name your module files with
+`.js.umodule` or `.js.umodule.coffee`, matching your poison of choice.
+
+If you're using Sprockets, load umodule.js by any way you see fit. For convenience,
+its source is included and can be obtained with `Umodule::Source.contents`, so
+it's merely a `umodule.js.erb` away:
+
+    <%= Umodule::Source.contents %>
+
+Alternatively, you can add `File.dirname(Umodule::Source.bundled_path)` to the
+asset load path.
+
+If you're using Rails, add `gem 'sprockets-umodule, require: umodule-rails`
+instead, which will make it an engine and set up all of this for you, so you
+just have to add `//= require
+umodule` to `application.js`.
+
+Important note: due to some technical complications, you must also
+`//= require` your umodule assets in `application.js`, and possibly manage
+dependency ordering manually. In any case, they should be loaded after
+`umodule.js`.
