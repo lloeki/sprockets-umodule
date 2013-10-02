@@ -1,6 +1,6 @@
 # sprockets-umodule
 
-[umodule-js](https://github.com/lloeki/umodule-js) integration with Sprockets
+[umodule-js](https://github.com/lloeki/umodule-js) integration with Sprockets (and Rails)
 
 ## Goal
 
