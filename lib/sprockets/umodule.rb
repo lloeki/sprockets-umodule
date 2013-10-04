@@ -1,3 +1,4 @@
+require 'umodule-source'
 require 'sprockets/umodule/version'
 require 'sprockets/umodule/wrapper'
 require 'sprockets/engines'
