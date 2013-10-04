@@ -8,6 +8,7 @@ Gem::Specification.new do |s|
   s.authors     = ['Loic Nageleisen']
   s.email       = ['loic.nageleisen@gmail.com']
   s.homepage    = 'http://github.com/lloeki/sprockets-umodule'
+  s.license     = 'MIT'
   s.summary     = %q{uModule wrapping for the Sprockets asset pipeline.}
   s.description = %q{uModule wrapping for the Sprockets asset pipeline.}
   s.files         = `git ls-files`.split("\n")
