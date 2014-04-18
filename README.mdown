@@ -2,6 +2,8 @@
 
 [umodule-js](https://github.com/lloeki/umodule-js) integration with Sprockets (and Rails)
 
+[![Build Status](https://travis-ci.org/lloeki/sprockets-umodule.svg?branch=master)](https://travis-ci.org/lloeki/sprockets-umodule)
+
 ## Goal
 
 `sprockets-umodule` saves you from the chore of writing CommonJS umodule
